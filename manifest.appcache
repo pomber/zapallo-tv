@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Wed Dec 26 2012 05:21:33 GMT-0300 (ART)
+# Time: Wed Dec 26 2012 05:39:36 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -58,18 +58,18 @@ images/channels/64.png
 images/channels/65.png
 images/channels/93.png
 images/channels/95.png
-images/shows/104282.jpg
-images/shows/13966.jpg
+images/shows/159825.jpg
+images/shows/180580.jpg
 images/shows/182839.jpg
 images/shows/198603.jpg
-images/shows/208086.jpg
 images/shows/259871.jpg
 images/shows/26184.jpg
 images/shows/392134.jpg
+images/shows/452214.jpg
 images/shows/463948.jpg
 images/shows/58704.jpg
-images/shows/95711.jpg
-images/shows/98698.jpg
+images/shows/98091.jpg
+images/shows/98713.jpg
 scripts/d7533b65.amd-app.js
 scripts/vendor/cf69c6f2.modernizr.min.js
 styles/a73038b7.main.css
