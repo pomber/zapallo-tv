@@ -1,0 +1,84 @@
+CACHE MANIFEST
+
+# Time: Wed Dec 26 2012 15:54:43 GMT-0300 (ART)
+# This manifest was created by confess.js, http://github.com/jamesgpearce/confess
+#
+# Retrieved URL: http://localhost:3501/
+# User-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#
+# Config:
+#  task: appcache
+#  userAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.12 Safari/535.11
+#  wait: 0
+#  consolePrefix: #
+#  verbose: true
+#  appcache:
+#   urlsFromDocument: true
+#   urlsFromRequests: false
+#   cacheFilter: .*
+#   networkFilter: null
+#  url: http://localhost:3501
+#  configFile: /usr/lib/node_modules/yeoman/lib/support/confess.json
+
+CACHE:
+http://localhost:3501/app/images/glyphicons-halflings-white.png?1354751292
+http://localhost:3501/app/images/glyphicons-halflings.png?1354751292
+http://localhost:3501/styles/images/f8cadea2.bg.png
+images/channels/1.png
+images/channels/11.png
+images/channels/147.png
+images/channels/148.png
+images/channels/149.png
+images/channels/151.png
+images/channels/152.png
+images/channels/153.png
+images/channels/154.png
+images/channels/155.png
+images/channels/156.png
+images/channels/158.png
+images/channels/2.png
+images/channels/20.png
+images/channels/23.png
+images/channels/24.png
+images/channels/25.png
+images/channels/26.png
+images/channels/27.png
+images/channels/51.png
+images/channels/52.png
+images/channels/53.png
+images/channels/54.png
+images/channels/55.png
+images/channels/56.png
+images/channels/57.png
+images/channels/58.png
+images/channels/59.png
+images/channels/6.png
+images/channels/60.png
+images/channels/61.png
+images/channels/63.png
+images/channels/64.png
+images/channels/65.png
+images/channels/93.png
+images/channels/95.png
+images/shows/112479.jpg
+images/shows/141419.jpg
+images/shows/163661.jpg
+images/shows/163918.jpg
+images/shows/169693.jpg
+images/shows/17783.jpg
+images/shows/18554.jpg
+images/shows/202608.jpg
+images/shows/231459.jpg
+images/shows/273204.jpg
+images/shows/319450.jpg
+images/shows/321878.jpg
+images/shows/463948.jpg
+images/shows/57349.jpg
+images/shows/77600.jpg
+images/shows/86603.jpg
+scripts/d7533b65.amd-app.js
+scripts/vendor/cf69c6f2.modernizr.min.js
+styles/a73038b7.main.css
+
+NETWORK:
+*
