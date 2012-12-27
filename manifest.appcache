@@ -1,6 +1,7 @@
+# XMLHttpRequest cannot load http://zapallotv-api.aws.af.cm/shows. Origin http://localhost:3501 is not allowed by Access-Control-Allow-Origin. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Wed Dec 26 2012 21:13:14 GMT-0300 (ART)
+# Time: Wed Dec 26 2012 21:18:04 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -25,39 +26,6 @@ http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,30
 http://localhost:3501/app/img/glyphicons-halflings-white.png
 http://localhost:3501/app/img/glyphicons-halflings.png
 http://localhost:3501/images/bg.png
-images/channels/1.png
-images/channels/11.png
-images/channels/147.png
-images/channels/148.png
-images/channels/149.png
-images/channels/151.png
-images/channels/155.png
-images/channels/158.png
-images/channels/2.png
-images/channels/20.png
-images/channels/24.png
-images/channels/25.png
-images/channels/26.png
-images/channels/27.png
-images/channels/52.png
-images/channels/53.png
-images/channels/57.png
-images/channels/59.png
-images/channels/60.png
-images/channels/61.png
-images/channels/63.png
-images/channels/65.png
-images/channels/95.png
-images/shows/198636.jpg
-images/shows/30406.jpg
-images/shows/307097.jpg
-images/shows/365288.jpg
-images/shows/382901.jpg
-images/shows/448503.jpg
-images/shows/451984.jpg
-images/shows/5549.jpg
-images/shows/58704.jpg
-images/shows/83378.jpg
 scripts/d7533b65.amd-app.js
 scripts/vendor/cf69c6f2.modernizr.min.js
 styles/136f13c8.main.css
