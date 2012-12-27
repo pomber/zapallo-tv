@@ -1,10 +1,17 @@
+@import "variables"
 @import "compass_twitter_bootstrap"
+@import "compass_twitter_bootstrap_responsive"
 
 body 
   background: 
-    color: #94CDCB 
-    image: url("images/bg.png") 
+    color: $grayLighter 
+    image: url("../images/bg.png") 
     repeat: repeat
+
+.navbar-inner 
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  border-radius: 0
 
 
 #shows-section
@@ -14,8 +21,8 @@ body
   h2 
     text-align: center
     text-shadow: 0px 1px 0px #529D9A
-    color: white !important
-    font-family: "kulturista-web"
+    color: $grayDarker !important
+    font-family: 'Merriweather',serif
     font-weight: 600
     font-size: 30px
     line-height: 40px
@@ -28,13 +35,14 @@ body
   padding: 0px 0px 2px 0px
 
   margin:
-    right: 26px
-    bottom: 26px
+    right: 14px
+    bottom: 14px
 
   background: white
-  -moz-box-shadow: 3px 3px 0px #529d9a
-  -webkit-box-shadow: 3px 3px 0px #529D9A
-  box-shadow: 3px 3px 0px #529D9A
+
+  -moz-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
+  -webkit-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
+  box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
   
   .info-container 
     overflow: hidden
@@ -55,4 +63,5 @@ body
     width: 70px
     height: 47px
     margin: 10px 5px
+
 
