@@ -3,6 +3,7 @@
 @import "compass_twitter_bootstrap_responsive"
 
 body 
+  padding: 0px  
   background: 
     color: $grayLighter 
     image: url("../images/bg.png") 
@@ -13,10 +14,10 @@ body
   -moz-border-radius: 0
   border-radius: 0
 
-
 #shows-section
+  margin: 0px auto
   overflow: hidden
-  padding: 20px
+  padding: 0px 7px
 
   h2 
     text-align: center
@@ -35,7 +36,8 @@ body
   padding: 0px 0px 2px 0px
 
   margin:
-    right: 14px
+    right: 7px
+    left: 7px
     bottom: 14px
 
   background: white
@@ -65,3 +67,23 @@ body
     margin: 10px 5px
 
 
+$showWidth: 284px
+$showsOffset: 14px
+
+#shows-section
+  @media (max-width: $showWidth*2 + $showsOffset)
+    width: $showWidth
+  @media (min-width: $showWidth*2 + $showsOffset) and (max-width: $showWidth*3 + $showsOffset)
+    width: $showWidth*2
+  @media (min-width: $showWidth*3 + $showsOffset) and (max-width: $showWidth*4 + $showsOffset)
+    width: $showWidth*3
+  @media (min-width: $showWidth*4 + $showsOffset) and (max-width: $showWidth*5 + $showsOffset)
+    width: $showWidth*4
+  @media (min-width: $showWidth*5 + $showsOffset)
+    width: $showWidth*5
+
+@media (max-width: 400px)
+  .hide-small
+    display: none
+  .navbar-inner
+    padding-right: 0px

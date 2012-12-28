@@ -1,7 +1,6 @@
-# XMLHttpRequest cannot load http://zapallotv-api.aws.af.cm/shows. Origin http://localhost:3501 is not allowed by Access-Control-Allow-Origin. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Wed Dec 26 2012 21:18:04 GMT-0300 (ART)
+# Time: Thu Dec 27 2012 23:36:25 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -26,9 +25,65 @@ http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,30
 http://localhost:3501/app/img/glyphicons-halflings-white.png
 http://localhost:3501/app/img/glyphicons-halflings.png
 http://localhost:3501/images/bg.png
+http://zapallo-tv-cdn.appspot.com/images/shows/114195.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/137512.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/151640.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/152147.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/200248.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/201256.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/210829.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/277645.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/285897.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/301883.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/360365.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/386213.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/388868.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/397409.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/445813.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/448179.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/75290.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/8205.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/85611.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/9589.jpg
+images/channels/1.png
+images/channels/11.png
+images/channels/147.png
+images/channels/148.png
+images/channels/149.png
+images/channels/151.png
+images/channels/152.png
+images/channels/153.png
+images/channels/154.png
+images/channels/155.png
+images/channels/156.png
+images/channels/158.png
+images/channels/2.png
+images/channels/20.png
+images/channels/23.png
+images/channels/24.png
+images/channels/25.png
+images/channels/26.png
+images/channels/27.png
+images/channels/51.png
+images/channels/52.png
+images/channels/53.png
+images/channels/54.png
+images/channels/55.png
+images/channels/56.png
+images/channels/57.png
+images/channels/58.png
+images/channels/59.png
+images/channels/6.png
+images/channels/60.png
+images/channels/61.png
+images/channels/63.png
+images/channels/64.png
+images/channels/65.png
+images/channels/93.png
+images/channels/95.png
 scripts/d7533b65.amd-app.js
 scripts/vendor/cf69c6f2.modernizr.min.js
-styles/136f13c8.main.css
+styles/c3e86583.main.css
 
 NETWORK:
 *
