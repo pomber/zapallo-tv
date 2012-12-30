@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/e271c4c7.main.css">
+        <link rel="stylesheet" href="styles/8a35b37a.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -38,13 +38,24 @@
     </nav>
     <section id="shows-section">
         <div id="b-current-show-section">
-            <input type="text" placeholder="¿Qué estas viendo?" data-bind="hidden: currentShowIsSelected, typeahead: {source: shows, display: 'title', itemSelected: selectCurrentShow }"/>
+            <input type="text" placeholder="¿Qué estas viendo?" data-bind="hidden: currentShowIsSelected, value: currentShowTitle, typeahead: {source: shows, display: 'title', itemSelected: selectCurrentShow }"/>
             <div data-bind="with: currentShow, visible: currentShowIsSelected" style="display:none" class="b-current-show-container">
                 <div class="image-container" data-bind="visible: hasImage">
                     <img class="image" data-bind="attr: { src: imageUrl }">
                 </div>
-                <p>Estas viendo: </p>
-                <h1 class="title" data-bind="text: title"></h1>
+                <div class="info-container">
+                    <div class="top">
+                        <div class="watching-label">Estas viendo:</div>
+                        <div class="close-label" data-bind="click: $parent.removeCurrentShow"><i class="icon-remove"></i></div>
+                    </div>                    
+                    <div class="middle">
+                        <h1 class="title" data-bind="trunk8: title"></h1>
+                    </div>
+                    <div>
+                        <div class="channel">por <span data-bind="text: channelName"></span></div>
+                        <div class="share" style="display:none">Compartir</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="shows-container" data-bind="foreach: shows, visible: true" style="display:none">
@@ -66,6 +77,6 @@
         
         
    
-    <script src="scripts/08428967.amd-app.js"></script>
+    <script src="scripts/e1684ac0.amd-app.js"></script>
 </body>
 </html>

@@ -6,6 +6,8 @@
     ShowListViewModel = (function() {
 
       function ShowListViewModel(shows) {
+        this.removeCurrentShow = __bind(this.removeCurrentShow, this);
+
         this.setCurrentShow = __bind(this.setCurrentShow, this);
 
         this.selectCurrentShow = __bind(this.selectCurrentShow, this);
@@ -18,6 +20,7 @@
         this.currentShowIsSelected = ko.computed(function() {
           return _this.currentShow() != null;
         });
+        this.currentShowTitle = ko.observable();
       }
 
       ShowListViewModel.prototype.setShows = function(shows) {
@@ -45,6 +48,11 @@
         return this.currentShow(show);
       };
 
+      ShowListViewModel.prototype.removeCurrentShow = function() {
+        this.currentShow(void 0);
+        return this.currentShowTitle("");
+      };
+
       return ShowListViewModel;
 
     })();
@@ -53,6 +61,7 @@
       function ShowViewModel(show) {
         this.id = show._id;
         this.title = show.title;
+        this.description = show.description;
         this.imageUrl = ko.observable(show.image_url);
         this.channelLogoUrl = ko.observable(show.channel.logo_url);
         this.hasImage = ko.computed(function() {

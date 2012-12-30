@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Sun Dec 30 2012 01:27:43 GMT-0300 (ART)
+# Time: Sun Dec 30 2012 06:00:09 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -22,43 +22,31 @@ CACHE MANIFEST
 
 CACHE:
 http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700
-http://localhost:3501/app/img/glyphicons-halflings-white.png
-http://localhost:3501/app/img/glyphicons-halflings.png
 http://localhost:3501/images/bg.png
+http://localhost:3501/images/glyphicons-halflings-white.png
+http://localhost:3501/images/glyphicons-halflings.png
 http://localhost:3501/images/select2.png
 http://localhost:3501/images/spinner.gif
-http://zapallo-tv-cdn.appspot.com/images/shows/135371_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/137255_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/150180_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/163385_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/201747_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/207506_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/213721_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/23612_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/237139_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/237822_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/27110_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/273765_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/283291_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/304515_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/305821_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/312570_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/329325_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/329719_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/332285_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/122410_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/123586_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/135696_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/146609_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/17815_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/187851_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/20062_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/225870_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/256502_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/287013_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/31333_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/339334_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/354749_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/361006_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/366373_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/377207_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/382923_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/389245_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/407052_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/421034_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/446047_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/44968_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/436544_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/45738_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/72214_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/48621_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/55033_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/8737_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/9679_gr.jpg
 images/channels/1.png
 images/channels/11.png
 images/channels/123.png
@@ -125,9 +113,9 @@ images/channels/95.png
 images/channels/96.png
 images/channels/98.png
 images/channels/99.png
-scripts/08428967.amd-app.js
+scripts/e1684ac0.amd-app.js
 scripts/vendor/cf69c6f2.modernizr.min.js
-styles/e271c4c7.main.css
+styles/8a35b37a.main.css
 
 NETWORK:
 *

@@ -1,6 +1,6 @@
 (function() {
 
-  define(['jquery', 'knockout', 'typeahead'], function($, ko) {
+  define(['jquery', 'knockout', 'typeahead', 'trunk8'], function($, ko) {
     ko.bindingHandlers.hidden = {
       update: function(element, valueAccessor) {
         var value;
@@ -19,7 +19,7 @@
         };
       }
     };
-    return ko.bindingHandlers.typeahead = {
+    ko.bindingHandlers.typeahead = {
       update: function(element, valueAccessor) {
         var params, source, value;
         value = valueAccessor();
@@ -29,6 +29,22 @@
         };
         params = $.extend({}, value, params);
         return $(element).typeahead(params);
+      }
+    };
+    return ko.bindingHandlers.trunk8 = {
+      init: function(element, valueAccessor) {
+        var value;
+        value = ko.utils.unwrapObservable(valueAccessor());
+        $(element).text(value);
+        return $(element).trunk8({
+          lines: 2
+        });
+      },
+      update: function(element, valueAccessor) {
+        var value;
+        value = ko.utils.unwrapObservable(valueAccessor());
+        $(element).text(value);
+        return $(element).trunk8('update', value);
       }
     };
   });

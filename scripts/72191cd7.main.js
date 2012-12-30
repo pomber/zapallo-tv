@@ -7,6 +7,9 @@
       },
       "typeahead": {
         deps: ["jquery"]
+      },
+      "trunk8": {
+        deps: ["jquery"]
       }
     },
     paths: {
@@ -14,7 +17,8 @@
       masonry: 'vendor/jquery.masonry.min',
       knockout: 'vendor/knockout-2.2.0',
       domReady: 'vendor/dom-ready',
-      typeahead: 'vendor/bootstrap-typeahead'
+      typeahead: 'vendor/bootstrap-typeahead',
+      trunk8: 'vendor/trunk8'
     }
   });
 

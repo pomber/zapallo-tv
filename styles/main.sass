@@ -28,26 +28,6 @@ body
     font-size: 30px
     line-height: 40px
 
-.b-current-show-container
-  background: white
-
-  -moz-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
-  -webkit-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
-  box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
-
-  padding: 8px
-  overflow: hidden
-
-  .image 
-    width: 100px
-    height: 100px
-    float: left
-
-  .title
-    padding: 0px 10px
-    font-size: 22px
-
-
 .b-show
   float: left
   width: 270px
@@ -90,12 +70,57 @@ body
   width: 66%
 
   input
-    width: 100%
+    width: 95%
     color: $grayDarker
+    margin: 0px auto
+    display: block
+
+.b-current-show-container
+  overflow: hidden
+  background: white
+
+  -moz-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
+  -webkit-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
+  box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
+
+  .image-container
+    float: left
+    margin: 5px
+    .image
+      width: 100px
+      height: 100px      
+
+  .info-container
+    overflow: hidden
+    margin: 5px
+
+    .top, .bottom
+      overflow: hidden
+      height: 20px
+
+    .middle
+      height: 60px
+      margin: 0px 5px
+
+    .title
+      margin: 0px
+      font-size: 24px
+      line-height: 28px
+      font-weight: bold
+
+    .watching-label, .channel
+      float: left
+      margin: 0px 5px
+
+    .close-label, .share
+      float: right
+      margin: 0px 5px
+      cursor: pointer
 
 
 $showWidth: 284px
 $showsOffset: 14px
+$smallLimit: $showWidth*2 + $showsOffset
 
 #shows-section
   @media (max-width: $showWidth*2 + $showsOffset)
@@ -109,8 +134,13 @@ $showsOffset: 14px
   @media (min-width: $showWidth*5 + $showsOffset)
     width: $showWidth*5
 
-@media (max-width: 400px)
+@media (max-width: $smallLimit)
   .hide-small
     display: none
   .navbar-inner
     padding-right: 0px
+  #b-current-show-section
+    width: $showWidth - 14px
+  .b-current-show-container .image-container
+    display: none
+
