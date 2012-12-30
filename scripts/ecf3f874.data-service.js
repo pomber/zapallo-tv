@@ -7,7 +7,7 @@
       function DataService() {}
 
       DataService.prototype.getShows = function(callback) {
-        return $.getJSON('http://zapallotv-api.aws.af.cm/shows', {}, callback);
+        return $.getJSON('http://zapallotv-api.herokuapp.com/shows', {}, callback);
       };
 
       return DataService;
