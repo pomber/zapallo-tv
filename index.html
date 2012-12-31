@@ -53,11 +53,9 @@
             if (response.status === 'connected') {
                 testAPI();
             } else if (response.status === 'not_authorized') {
-                // not_authorized
-                login();
+                consol.log("not_authorized");
             } else {
-                // not_logged_in
-                login();
+                consol.log("not_logged_in");
             }
         });
       };
@@ -85,7 +83,7 @@
                         <li>Cablevison</li>
                     </ul>
                 </li>
-                <li class="hide-small"><a href="#">Entrar</a></li>
+                <li class="hide-small"><a href="javascript:login()">Entrar</a></li>
             </ul>
         </div>
     </nav>
