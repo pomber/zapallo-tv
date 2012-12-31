@@ -1,7 +1,7 @@
 # Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Mon Dec 31 2012 00:47:33 GMT-0300 (ART)
+# Time: Mon Dec 31 2012 01:07:06 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -38,30 +38,36 @@ http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif
 http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png
-http://zapallo-tv-cdn.appspot.com/images/shows/139536_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/135903_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/140118_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/169601_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/157109_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/164228_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/18753_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/214719_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/233690_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/23612_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/256233_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/283291_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/287015_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/297964_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/287013_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/30047_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/305153_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/319450_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/332285_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/344134_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/360403_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/366377_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/367821_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/388069_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/420387_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/423198_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/426989_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/44968_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/45739_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/435716_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/465819_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/8737_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/92617_gr.jpg
 images/channels/1.png
 images/channels/11.png
 images/channels/123.png
-images/channels/124.png
 images/channels/125.png
 images/channels/126.png
 images/channels/127.png
@@ -85,10 +91,8 @@ images/channels/149.png
 images/channels/150.png
 images/channels/151.png
 images/channels/152.png
-images/channels/153.png
 images/channels/154.png
 images/channels/155.png
-images/channels/156.png
 images/channels/157.png
 images/channels/158.png
 images/channels/17.png
