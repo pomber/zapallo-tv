@@ -18,6 +18,59 @@
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
     <body>
+    <div id="fb-root"></div>
+    <script>
+        function login() {
+            FB.login(function(response) {
+                if (response.authResponse) {
+                    testAPI();
+                } else {
+                    consol.log("login cancelled")
+                }
+            });
+        }
+
+        function testAPI() {
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function(response) {
+                console.log('Good to see you, ' + response.name + '.');
+            });
+        }
+
+      // Additional JS functions here
+      window.fbAsyncInit = function() {
+
+        FB.init({
+          appId      : '513016388720120', // App ID
+          channelUrl : '//pomber.github.com/zapallo-tv/channel.html', // Channel File
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          xfbml      : true  // parse XFBML
+        });
+
+        // Additional init code here
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                testAPI();
+            } else if (response.status === 'not_authorized') {
+                // not_authorized
+                login();
+            } else {
+                // not_logged_in
+                login();
+            }
+        });
+      };
+
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    </script>
         
     <nav class="navbar">
         <div class="navbar-inner">
@@ -25,7 +78,7 @@
             <ul class="nav pull-right">
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Cablevision HD
+                    Cable
                     <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
