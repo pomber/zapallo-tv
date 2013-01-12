@@ -1,0 +1,74 @@
+@import "variables"
+@import "app_variables"
+@import "compass/css3/box-shadow"
+
+// top section for search-bar and current-show container
+#b-current-show-section
+  margin: 20px auto 20px
+  width: 66%
+
+// search-bar
+#b-current-show-section input
+  width: 95%
+  color: $grayDarker
+  margin: 0px auto
+  display: block
+
+// current-show container
+.b-current-show-container
+  overflow: hidden
+  background: white
+  +box-shadow(hsla(0, 15%, 12%, 0.4) 0 1px 3px)
+
+  .image-container
+    float: left
+    margin: 5px
+    .image
+      width: 100px
+      height: 100px      
+
+  .info-container
+    overflow: hidden
+    margin: 5px
+
+    .top, .bottom
+      overflow: hidden
+      height: 20px
+    .middle
+      height: 60px
+      margin: 0px 5px
+
+    .title
+      margin: 0px
+      font-size: 24px
+      line-height: 28px
+      font-weight: bold
+    .watching-label, .channel
+      float: left
+      margin: 0px 5px
+
+  .buttons-container
+    float: right
+    margin: 5px
+    font-size: 20px
+    width: 20px
+    height: 100px
+    text-align: center
+    position: relative
+    
+    i
+      cursor: pointer
+
+    .top
+      position: absolute
+      top: 0
+    .bottom
+      position: absolute
+      bottom: 0
+
+// small screen style
+@media (max-width: $smallLimit)
+  #b-current-show-section
+    width: $showWidth - 14px
+  .b-current-show-container .image-container
+    display: none

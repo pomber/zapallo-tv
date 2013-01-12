@@ -2,7 +2,8 @@
 @import "compass_twitter_bootstrap"
 @import "compass_twitter_bootstrap_responsive"
 @import "compass_twitter_bootstrap_awesome"
-@import "compass/css3/opacity"
+@import "app_variables"
+@import "current_show"
 
 body 
   padding: 0px  
@@ -10,6 +11,9 @@ body
     color: $grayLighter 
     image: url("../images/bg.png") 
     repeat: repeat
+
+.navbar
+  margin-bottom: 0px
 
 .navbar-inner 
   -webkit-border-radius: 0
@@ -20,15 +24,6 @@ body
   margin: 0px auto
   overflow: hidden
   padding: 0px 7px
-
-  h2 
-    text-align: center
-    text-shadow: 0px 1px 0px #529D9A
-    color: $grayDarker !important
-    font-family: 'Merriweather',serif
-    font-weight: 600
-    font-size: 30px
-    line-height: 40px
 
 .b-show
   float: left
@@ -94,63 +89,6 @@ body
     padding: 0px 10px 0px 5px
     width: 180px
 
-#b-current-show-section
-  margin: 10px auto 20px
-  width: 66%
-
-  input
-    width: 95%
-    color: $grayDarker
-    margin: 0px auto
-    display: block
-
-.b-current-show-container
-  overflow: hidden
-  background: white
-
-  -moz-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
-  -webkit-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
-  box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
-
-  .image-container
-    float: left
-    margin: 5px
-    .image
-      width: 100px
-      height: 100px      
-
-  .info-container
-    overflow: hidden
-    margin: 5px
-
-    .top, .bottom
-      overflow: hidden
-      height: 20px
-
-    .middle
-      height: 60px
-      margin: 0px 5px
-
-    .title
-      margin: 0px
-      font-size: 24px
-      line-height: 28px
-      font-weight: bold
-
-    .watching-label, .channel
-      float: left
-      margin: 0px 5px
-
-    .close-label, .share
-      float: right
-      margin: 0px 5px
-      cursor: pointer
-
-
-$showWidth: 284px
-$showsOffset: 14px
-$smallLimit: $showWidth*2 + $showsOffset
-
 #shows-section
   @media (max-width: $showWidth*2 + $showsOffset)
     width: $showWidth
@@ -168,8 +106,4 @@ $smallLimit: $showWidth*2 + $showsOffset
     display: none
   .navbar-inner
     padding-right: 0px
-  #b-current-show-section
-    width: $showWidth - 14px
-  .b-current-show-container .image-container
-    display: none
 

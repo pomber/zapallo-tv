@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/6339fdb0.main.css">
+        <link rel="stylesheet" href="styles/ac9ebfac.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -72,7 +72,8 @@
         
     <nav class="navbar">
         <div class="navbar-inner">
-            <a class="brand" href="/">Zapallo TV</a>
+            <a class="brand" href="/">Zapallo TV </i></a>            
+            <a class="brand" href="/"><i class="icon-refresh" title="actualizar"></i></a>            
             <ul class="nav pull-right">
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -91,17 +92,26 @@
                 <div class="image-container" data-bind="visible: hasImage">
                     <img class="image" data-bind="attr: { src: imageUrl }">
                 </div>
+                <div class="buttons-container">
+                    <div class="top">
+                        <i class="icon-remove" data-bind="click: removeCurrentShow" title="No lo estoy viendo más"></i> 
+                    </div>
+                    <div class="bottom">
+                        <i class="icon-google-plus" title="Compartir en Google+" data-bind="click: googleShare"></i>
+                        <i class="icon-twitter" title="Compartir en twitter" data-bind="click: twitterShare"></i>
+                        <i class="icon-facebook" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
+                    </div>
+                </div>
                 <div class="info-container">
                     <div class="top">
                         <div class="watching-label">Estas viendo:</div>
-                        <div class="close-label" data-bind="click: $parent.removeCurrentShow"><i class="icon-remove"></i></div>
+                        <div class="close-label"></div>
                     </div>                    
                     <div class="middle">
                         <h1 class="title" data-bind="trunk8: {text: title, lines: 2}"></h1>
                     </div>
                     <div>
                         <div class="channel">por <span data-bind="text: channelName"></span></div>
-                        <div class="share" style="display:none">Compartir</div>
                     </div>
                 </div>
             </div>
@@ -112,9 +122,9 @@
                     <img class="image" data-bind="attr: { src: imageUrl }"/>
                     <div class="buttons-container">
                         <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
-                        <i class="icon-facebook icon-2x pull-left"></i>
-                        <i class="icon-twitter icon-2x pull-left"></i>
-                        <i class="icon-google-plus icon-2x pull-left"></i>
+                        <i class="icon-facebook icon-2x pull-left" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
+                        <i class="icon-twitter icon-2x pull-left" title="Compartir en twitter" data-bind="click: twitterShare"></i>
+                        <i class="icon-google-plus icon-2x pull-left" title="Compartir en Google+" data-bind="click: googleShare"></i>
                     </div>
                 </div>
                 <div class="info-container">
@@ -140,6 +150,6 @@
         
         
    
-    <script src="scripts/3c4f8ae1.amd-app.js"></script>
+    <script src="scripts/47a1dddf.amd-app.js"></script>
 </body>
 </html>

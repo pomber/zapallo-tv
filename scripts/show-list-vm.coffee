@@ -38,6 +38,18 @@ define ['knockout'], (ko) ->
 		setAsCurrent: =>
 			@parent.setCurrentShow this
 
+		removeCurrentShow: =>
+			@parent.removeCurrentShow this
+
+		facebookShare: =>
+			alert("proximamente")
+
+		twitterShare: =>
+			alert("proximamente")
+
+		googleShare: =>
+			alert("proximamente")
+
 	return ShowListViewModel
 
 		

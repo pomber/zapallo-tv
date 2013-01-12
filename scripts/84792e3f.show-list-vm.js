@@ -59,6 +59,14 @@
     ShowViewModel = (function() {
 
       function ShowViewModel(show, parent) {
+        this.googleShare = __bind(this.googleShare, this);
+
+        this.twitterShare = __bind(this.twitterShare, this);
+
+        this.facebookShare = __bind(this.facebookShare, this);
+
+        this.removeCurrentShow = __bind(this.removeCurrentShow, this);
+
         this.setAsCurrent = __bind(this.setAsCurrent, this);
 
         var _ref;
@@ -77,6 +85,22 @@
 
       ShowViewModel.prototype.setAsCurrent = function() {
         return this.parent.setCurrentShow(this);
+      };
+
+      ShowViewModel.prototype.removeCurrentShow = function() {
+        return this.parent.removeCurrentShow(this);
+      };
+
+      ShowViewModel.prototype.facebookShare = function() {
+        return alert("proximamente");
+      };
+
+      ShowViewModel.prototype.twitterShare = function() {
+        return alert("proximamente");
+      };
+
+      ShowViewModel.prototype.googleShare = function() {
+        return alert("proximamente");
       };
 
       return ShowViewModel;
