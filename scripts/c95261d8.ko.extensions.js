@@ -33,18 +33,18 @@
     };
     return ko.bindingHandlers.trunk8 = {
       init: function(element, valueAccessor) {
-        var value;
-        value = ko.utils.unwrapObservable(valueAccessor());
-        $(element).text(value);
-        return $(element).trunk8({
-          lines: 2
-        });
+        var params, text;
+        params = ko.utils.unwrapObservable(valueAccessor());
+        text = ko.utils.unwrapObservable(params.text);
+        $(element).text(text);
+        return $(element).trunk8(params);
       },
       update: function(element, valueAccessor) {
-        var value;
-        value = ko.utils.unwrapObservable(valueAccessor());
-        $(element).text(value);
-        return $(element).trunk8('update', value);
+        var params, text;
+        params = ko.utils.unwrapObservable(valueAccessor());
+        text = ko.utils.unwrapObservable(params.text);
+        $(element).text(text);
+        return $(element).trunk8('update', text);
       }
     };
   });

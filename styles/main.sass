@@ -1,6 +1,8 @@
 @import "variables"
 @import "compass_twitter_bootstrap"
 @import "compass_twitter_bootstrap_responsive"
+@import "compass_twitter_bootstrap_awesome"
+@import "compass/css3/opacity"
 
 body 
   padding: 0px  
@@ -44,6 +46,21 @@ body
   -moz-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
   -webkit-box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
   box-shadow: 0 1px 3px hsla(0, 15%, 12%, 0.4)
+
+  .image-container
+    position: relative
+
+  .buttons-container
+    width: 90%
+    height: 32px
+    background-color: rgba(40, 40, 40, 0.6)
+    position: absolute
+    bottom: 0px
+    padding: 0px 5%
+
+    i
+      cursor: pointer
+      color: white
   
   .info-container 
     overflow: hidden
@@ -56,14 +73,21 @@ body
     width: 180px
     float: right
     padding: 5px
-    font-size: 17px
-    line-height: 24px
+    font-size: 16px
+    line-height: 23px
+    font-weight: bold
+    color: $grayDarker
 
   .channel
     float: left
     width: 70px
     height: 47px
     margin: 10px 5px
+
+  .description
+    float: right
+    padding: 0px 10px 0px 5px
+    width: 180px
 
 #b-current-show-section
   margin: 10px auto 20px

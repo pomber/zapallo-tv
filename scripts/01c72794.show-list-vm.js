@@ -30,10 +30,10 @@
           _results = [];
           for (_i = 0, _len = shows.length; _i < _len; _i++) {
             show = shows[_i];
-            _results.push(new ShowViewModel(show));
+            _results.push(new ShowViewModel(show, this));
           }
           return _results;
-        })());
+        }).call(this));
       };
 
       ShowListViewModel.prototype.selectCurrentShow = function(item, showId, showTitle) {
@@ -58,10 +58,13 @@
     })();
     ShowViewModel = (function() {
 
-      function ShowViewModel(show) {
+      function ShowViewModel(show, parent) {
+        this.setAsCurrent = __bind(this.setAsCurrent, this);
+
+        var _ref;
         this.id = show._id;
         this.title = show.title;
-        this.description = show.description;
+        this.description = (_ref = show.description) != null ? _ref : "";
         this.imageUrl = ko.observable(show.image_url);
         this.channelLogoUrl = ko.observable(show.channel.logo_url);
         this.hasImage = ko.computed(function() {
@@ -69,7 +72,12 @@
         });
         this.channelName = ko.observable(show.channel.name);
         this.fileId = ko.observable(show.file_id);
+        this.parent = parent;
       }
+
+      ShowViewModel.prototype.setAsCurrent = function() {
+        return this.parent.setCurrentShow(this);
+      };
 
       return ShowViewModel;
 

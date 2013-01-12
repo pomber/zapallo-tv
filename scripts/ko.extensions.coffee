@@ -20,12 +20,13 @@ define ['jquery', 'knockout', 'typeahead', 'trunk8'], ($, ko) ->
 
 	ko.bindingHandlers.trunk8 =
 		init: (element, valueAccessor) ->
-			# TODO receive lines in valueAccessors
-			value = ko.utils.unwrapObservable valueAccessor()
-			$(element).text(value)
-			$(element).trunk8({lines: 2})
+			params = ko.utils.unwrapObservable valueAccessor()
+			text = ko.utils.unwrapObservable params.text
+			$(element).text(text)
+			$(element).trunk8(params)
 
 		update: (element, valueAccessor) ->	        
-			value = ko.utils.unwrapObservable valueAccessor()
-			$(element).text(value)
-			$(element).trunk8('update', value)
+			params = ko.utils.unwrapObservable valueAccessor()
+			text = ko.utils.unwrapObservable params.text
+			$(element).text(text)
+			$(element).trunk8('update', text)
