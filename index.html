@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/43c97840.main.css">
+        <link rel="stylesheet" href="styles/6339fdb0.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -111,7 +111,7 @@
                 <div class="image-container" data-bind="visible: hasImage">
                     <img class="image" data-bind="attr: { src: imageUrl }"/>
                     <div class="buttons-container">
-                        <i class="icon-eye-open icon-2x pull-right" data-bind="click: setAsCurrent"></i>
+                        <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
                         <i class="icon-facebook icon-2x pull-left"></i>
                         <i class="icon-twitter icon-2x pull-left"></i>
                         <i class="icon-google-plus icon-2x pull-left"></i>
@@ -122,6 +122,12 @@
                     <img class="channel" data-bind="attr: { src: channelLogoUrl, title: channelName }"></img>
                     <div class="description">
                         <p data-bind='trunk8: { text: description, lines: 4 }, hidden: hasImage'></p>
+                    </div>
+                    <div class="buttons-container" data-bind="hidden: hasImage">
+                        <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
+                        <i class="icon-facebook icon-2x pull-left"></i>
+                        <i class="icon-twitter icon-2x pull-left"></i>
+                        <i class="icon-google-plus icon-2x pull-left"></i>
                     </div>
                 </div>
             </article>

@@ -34,7 +34,7 @@ body
   float: left
   width: 270px
   display: block
-  padding: 0px 0px 2px 0px
+  padding: 0px
 
   margin:
     right: 7px
@@ -49,13 +49,15 @@ body
 
   .image-container
     position: relative
+    
+    .buttons-container
+      position: absolute
+      bottom: 0px
 
   .buttons-container
     width: 90%
     height: 32px
     background-color: rgba(40, 40, 40, 0.6)
-    position: absolute
-    bottom: 0px
     padding: 0px 5%
 
     i
@@ -64,6 +66,9 @@ body
   
   .info-container 
     overflow: hidden
+
+    .buttons-container
+      float: left
   
   .image 
     width: 270px
