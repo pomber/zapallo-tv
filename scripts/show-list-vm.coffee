@@ -22,6 +22,9 @@ define ['knockout'], (ko) ->
 			@currentShow(undefined)
 			@currentShowTitle("")
 
+		refreshShows: (shows) =>
+			@shows(new ShowViewModel(show, this) for show in shows)
+
 	class ShowViewModel 
 
 		constructor: (show, parent) ->

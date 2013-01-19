@@ -2,11 +2,20 @@ define ['jquery', 'knockout', 'data-service', 'show-list-vm', 'masonry', 'ko.ext
 
 	class App
 
-		start: ->
-			dataService.getShows (shows) ->
-				showListViewModel = new ShowListViewModel(shows)
-				ko.applyBindings showListViewModel, document.getElementById('shows-section')
+		refresh: => 
+			$('.d-refresh-shows').addClass('icon-spin')
+			dataService.getShows (shows) =>
+				@showListViewModel.refreshShows(shows)
+				$('#shows-container').masonry('reload')
+				$('.d-refresh-shows').removeClass('icon-spin')
+
+		start: =>
+			dataService.getShows (shows) =>
+				@showListViewModel = new ShowListViewModel(shows)
+				ko.applyBindings @showListViewModel, document.getElementById('shows-section')
 				$('#shows-container').masonry
-	   				itemSelector : '.b-show'
+					itemSelector : '.b-show'
+				$('.d-refresh-shows').click(@refresh)
 	
 	return new App()
+

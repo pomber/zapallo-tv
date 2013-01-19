@@ -6,6 +6,8 @@
     ShowListViewModel = (function() {
 
       function ShowListViewModel(shows) {
+        this.refreshShows = __bind(this.refreshShows, this);
+
         this.removeCurrentShow = __bind(this.removeCurrentShow, this);
 
         this.setCurrentShow = __bind(this.setCurrentShow, this);
@@ -51,6 +53,19 @@
       ShowListViewModel.prototype.removeCurrentShow = function() {
         this.currentShow(void 0);
         return this.currentShowTitle("");
+      };
+
+      ShowListViewModel.prototype.refreshShows = function(shows) {
+        var show;
+        return this.shows((function() {
+          var _i, _len, _results;
+          _results = [];
+          for (_i = 0, _len = shows.length; _i < _len; _i++) {
+            show = shows[_i];
+            _results.push(new ShowViewModel(show, this));
+          }
+          return _results;
+        }).call(this));
       };
 
       return ShowListViewModel;

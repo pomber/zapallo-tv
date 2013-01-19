@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/ac9ebfac.main.css">
+        <link rel="stylesheet" href="styles/21d55026.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -73,7 +73,7 @@
     <nav class="navbar">
         <div class="navbar-inner">
             <a class="brand" href="/">Zapallo TV </i></a>            
-            <a class="brand" href="/"><i class="icon-refresh" title="actualizar"></i></a>            
+            <!-- <a class="brand d-refresh-shows"><i class="icon-refresh" title="actualizar"></i></a>      -->       
             <ul class="nav pull-right">
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -135,9 +135,9 @@
                     </div>
                     <div class="buttons-container" data-bind="hidden: hasImage">
                         <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
-                        <i class="icon-facebook icon-2x pull-left"></i>
-                        <i class="icon-twitter icon-2x pull-left"></i>
-                        <i class="icon-google-plus icon-2x pull-left"></i>
+                        <i class="icon-facebook icon-2x pull-left" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
+                        <i class="icon-twitter icon-2x pull-left" title="Compartir en twitter" data-bind="click: twitterShare"></i>
+                        <i class="icon-google-plus icon-2x pull-left" title="Compartir en Google+" data-bind="click: googleShare"></i>
                     </div>
                 </div>
             </article>
@@ -150,6 +150,6 @@
         
         
    
-    <script src="scripts/47a1dddf.amd-app.js"></script>
+    <script src="scripts/6ccd1def.amd-app.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+/* line 4, ../../app/styles/show.sass */
+.b-show {
+  float: left;
+  width: 270px;
+  display: block;
+  padding: 0px;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-bottom: 14px;
+  background: white;
+  -moz-box-shadow: 0 1px 3px rgba(35, 26, 26, 0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(35, 26, 26, 0.4);
+  box-shadow: 0 1px 3px rgba(35, 26, 26, 0.4);
+}
+/* line 21, ../../app/styles/show.sass */
+.b-show .image-container {
+  position: relative;
+}
+/* line 24, ../../app/styles/show.sass */
+.b-show .image-container .buttons-container {
+  position: absolute;
+  bottom: 0px;
+}
+/* line 28, ../../app/styles/show.sass */
+.b-show .buttons-container {
+  width: 90%;
+  height: 32px;
+  background-color: rgba(40, 40, 40, 0.6);
+  padding: 0px 5%;
+}
+/* line 34, ../../app/styles/show.sass */
+.b-show .buttons-container i {
+  cursor: pointer;
+  color: white;
+}
+/* line 38, ../../app/styles/show.sass */
+.b-show .info-container {
+  overflow: hidden;
+}
+/* line 41, ../../app/styles/show.sass */
+.b-show .info-container .buttons-container {
+  float: left;
+}
+/* line 44, ../../app/styles/show.sass */
+.b-show .image {
+  width: 270px;
+  height: 270px;
+}
+/* line 48, ../../app/styles/show.sass */
+.b-show .title {
+  width: 180px;
+  float: right;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  color: #080808;
+}
+/* line 57, ../../app/styles/show.sass */
+.b-show .channel {
+  float: left;
+  width: 70px;
+  height: 47px;
+  margin: 10px 5px;
+}
+/* line 63, ../../app/styles/show.sass */
+.b-show .description {
+  float: right;
+  padding: 0px 10px 0px 5px;
+  width: 180px;
+}
