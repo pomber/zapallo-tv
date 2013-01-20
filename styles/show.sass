@@ -6,6 +6,7 @@
   width: 270px
   display: block
   padding: 0px
+  cursor: pointer
 
   margin:
     right: 7px
@@ -25,11 +26,19 @@
       position: absolute
       bottom: 0px
 
-    .title
+    .details-container
+      padding: 8px 10px 6px
       position: absolute
       bottom: 0px
       background-color: rgba(40, 40, 40, 0.6)
       color: $grayLighter
+
+      .details
+        font-size: 11px
+        font-family: 'Droid Serif', serif
+
+      .title      
+        color: $grayLighter
 
   .buttons-container
     display: none
@@ -53,17 +62,17 @@
     height: 270px
 
   .image.no-photo
-    height: 150px
+    //height: 150px
+    height: 270px
   
   .title 
+    padding: 0px
     margin: 0px
     width: 250px
     float: right
-    padding: 8px 10px 10px
     font-size: 20px
     line-height: 1.1
     letter-spacing: -1px
-    color: $grayMoreDark
     font-family: 'Droid Serif', serif
 
   .channel

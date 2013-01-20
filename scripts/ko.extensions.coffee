@@ -10,6 +10,15 @@ define ['jquery', 'knockout', 'typeahead', 'trunk8'], ($, ko) ->
 			value = ko.utils.unwrapObservable valueAccessor()
 			return { controlsDescendantBindings: value }
 
+	ko.bindingHandlers.time = 
+		update: (element, valueAccessor) ->
+			date = ko.utils.unwrapObservable valueAccessor()
+			h = date.getHours() 
+			m = date.getMinutes()
+			m = "0" + m if m < 10
+			time = "#{h}:#{m}"
+			$(element).text(time)
+
 	ko.bindingHandlers.typeahead =
 	    update: (element, valueAccessor) ->	        
 	        value = valueAccessor()	         

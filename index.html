@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/5986b153.main.css">
+        <link rel="stylesheet" href="styles/20582a88.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -120,7 +120,10 @@
             <article class="b-show">
                 <div class="image-container" data-bind="visible: true">
                     <img class="image" data-bind="attr: { src: imageUrl }, css: {'no-photo': !hasImage()}"/>
-                    <h1 class="title" data-bind="text: title"></h1>
+                    <div class="details-container">
+                        <h1 class="title" data-bind="text: title"></h1>
+                        <div class="details">de <b data-bind="time: startTime"></b> a <b data-bind="time: endTime"></b> por <b data-bind="text: channelName"></b></div>
+                    </div>                    
                     <div class="buttons-container">
                         <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
                         <i class="icon-facebook icon-2x pull-left" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
@@ -131,7 +134,7 @@
                 <div class="info-container">
                     <!-- <h1 class="title" data-bind="text: title"></h1> -->
                     <!-- <img class="channel" data-bind="attr: { src: channelLogoUrl, title: channelName }"></img> -->
-                    <div class="description" data-bind="visible: hasDescription">
+                    <div class="description" data-bind="visible: false">
                         <p data-bind='trunk8: { text: description, lines: 5 }'></p>
                     </div>
                     <div class="buttons-container" data-bind="hidden: hasImage">
@@ -151,6 +154,6 @@
         
         
    
-    <script src="scripts/513b2852.amd-app.js"></script>
+    <script src="scripts/a29b5c69.amd-app.js"></script>
 </body>
 </html>

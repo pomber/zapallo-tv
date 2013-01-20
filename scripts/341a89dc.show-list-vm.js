@@ -97,6 +97,8 @@
           return show.description != null;
         });
         this.channelName = ko.observable(show.channel.name);
+        this.startTime = ko.observable(new Date(show.start_time));
+        this.endTime = ko.observable(new Date(show.end_time));
         this.fileId = ko.observable(show.file_id);
         this.parent = parent;
       }

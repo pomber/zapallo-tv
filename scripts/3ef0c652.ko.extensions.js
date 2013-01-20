@@ -19,6 +19,19 @@
         };
       }
     };
+    ko.bindingHandlers.time = {
+      update: function(element, valueAccessor) {
+        var date, h, m, time;
+        date = ko.utils.unwrapObservable(valueAccessor());
+        h = date.getHours();
+        m = date.getMinutes();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        time = "" + h + ":" + m;
+        return $(element).text(time);
+      }
+    };
     ko.bindingHandlers.typeahead = {
       update: function(element, valueAccessor) {
         var params, source, value;

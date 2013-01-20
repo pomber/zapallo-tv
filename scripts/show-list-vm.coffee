@@ -36,6 +36,8 @@ define ['knockout'], (ko) ->
 			@hasImage = ko.computed( -> show.image_url? )
 			@hasDescription = ko.computed( -> show.description? )
 			@channelName = ko.observable show.channel.name
+			@startTime = ko.observable new Date(show.start_time)
+			@endTime = ko.observable new Date(show.end_time)
 			@fileId = ko.observable show.file_id
 			@parent = parent
 
