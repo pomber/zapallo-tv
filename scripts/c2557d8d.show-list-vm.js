@@ -84,11 +84,11 @@
 
         this.setAsCurrent = __bind(this.setAsCurrent, this);
 
-        var _ref;
+        var _ref, _ref1;
         this.id = show._id;
         this.title = show.title;
         this.description = (_ref = show.description) != null ? _ref : "";
-        this.imageUrl = ko.observable(show.image_url);
+        this.imageUrl = ko.observable((_ref1 = show.image_url) != null ? _ref1 : 'images/noise.jpg');
         this.channelLogoUrl = ko.observable(show.channel.logo_url);
         this.hasImage = ko.computed(function() {
           return show.image_url != null;

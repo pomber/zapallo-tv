@@ -26,6 +26,7 @@
       bottom: 0px
 
   .buttons-container
+    display: none
     width: 90%
     height: 32px
     background-color: rgba(40, 40, 40, 0.6)
@@ -44,15 +45,20 @@
   .image 
     width: 270px
     height: 270px
+
+  .image.no-photo
+    height: 150px
   
   .title 
-    width: 180px
+    margin: 0px
+    width: 250px
     float: right
-    padding: 5px
-    font-size: 16px
-    line-height: 23px
-    font-weight: bold
-    color: $grayDarker
+    padding: 8px 10px 10px
+    font-size: 20px
+    line-height: 1.1
+    letter-spacing: -1px
+    color: $grayMoreDark
+    font-family: 'Droid Serif', serif
 
   .channel
     float: left
@@ -62,5 +68,9 @@
 
   .description
     float: right
-    padding: 0px 10px 0px 5px
-    width: 180px
+    padding: 0px 10px 0px
+    width: 250px
+    font-family: 'Droid Sans', sans-serif
+    font-style: normal
+    font-size: 12px
+    line-height: 16px

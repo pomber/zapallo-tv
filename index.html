@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/21d55026.main.css">
+        <link rel="stylesheet" href="styles/44d48d86.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -118,8 +118,8 @@
         </div>
         <div id="shows-container" data-bind="visible: true, foreach: shows" style="display:none">
             <article class="b-show">
-                <div class="image-container" data-bind="visible: hasImage">
-                    <img class="image" data-bind="attr: { src: imageUrl }"/>
+                <div class="image-container" data-bind="visible: true">
+                    <img class="image" data-bind="attr: { src: imageUrl }, css: {'no-photo': !hasImage()}"/>
                     <div class="buttons-container">
                         <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
                         <i class="icon-facebook icon-2x pull-left" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
@@ -129,9 +129,9 @@
                 </div>
                 <div class="info-container">
                     <h1 class="title" data-bind="text: title"></h1>
-                    <img class="channel" data-bind="attr: { src: channelLogoUrl, title: channelName }"></img>
+                    <!-- <img class="channel" data-bind="attr: { src: channelLogoUrl, title: channelName }"></img> -->
                     <div class="description">
-                        <p data-bind='trunk8: { text: description, lines: 4 }, hidden: hasImage'></p>
+                        <p data-bind='trunk8: { text: description, lines: 5 }'></p>
                     </div>
                     <div class="buttons-container" data-bind="hidden: hasImage">
                         <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
@@ -150,6 +150,6 @@
         
         
    
-    <script src="scripts/6ccd1def.amd-app.js"></script>
+    <script src="scripts/2e01c682.amd-app.js"></script>
 </body>
 </html>

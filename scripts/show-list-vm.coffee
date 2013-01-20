@@ -31,7 +31,7 @@ define ['knockout'], (ko) ->
 			@id = show._id
 			@title = show.title
 			@description = show.description ? ""
-			@imageUrl = ko.observable show.image_url
+			@imageUrl = ko.observable show.image_url ? 'images/noise.jpg'
 			@channelLogoUrl = ko.observable show.channel.logo_url
 			@hasImage = ko.computed( -> show.image_url? )
 			@channelName = ko.observable show.channel.name
