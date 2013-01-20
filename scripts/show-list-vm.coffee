@@ -34,6 +34,7 @@ define ['knockout'], (ko) ->
 			@imageUrl = ko.observable show.image_url ? 'images/noise.jpg'
 			@channelLogoUrl = ko.observable show.channel.logo_url
 			@hasImage = ko.computed( -> show.image_url? )
+			@hasDescription = ko.computed( -> show.description? )
 			@channelName = ko.observable show.channel.name
 			@fileId = ko.observable show.file_id
 			@parent = parent

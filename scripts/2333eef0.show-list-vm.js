@@ -93,6 +93,9 @@
         this.hasImage = ko.computed(function() {
           return show.image_url != null;
         });
+        this.hasDescription = ko.computed(function() {
+          return show.description != null;
+        });
         this.channelName = ko.observable(show.channel.name);
         this.fileId = ko.observable(show.file_id);
         this.parent = parent;
