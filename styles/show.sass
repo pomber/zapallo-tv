@@ -1,5 +1,7 @@
 @import variables
 @import app_variables
+@import compass/css3/transition
+@import compass/css3/opacity
 
 .b-show
   float: left
@@ -27,7 +29,8 @@
       bottom: 0px
 
     .details-container
-      padding: 8px 10px 6px
+      padding: 8px 10px 0px
+      max-height: 256px
       position: absolute
       bottom: 0px
       background-color: rgba(40, 40, 40, 0.6)
@@ -36,9 +39,15 @@
       .details
         font-size: 11px
         font-family: 'Droid Serif', serif
+        padding-bottom: 1px
 
       .title      
         color: $grayLighter
+
+      .description
+        max-height: 0px
+        @include transition(max-height .6s ease-out)
+        padding-top: 6px 
 
   .buttons-container
     display: none
@@ -51,18 +60,8 @@
       cursor: pointer
       color: white
   
-  .info-container 
-    overflow: hidden
-
-    .buttons-container
-      float: left
-  
   .image 
     width: 270px
-    height: 270px
-
-  .image.no-photo
-    //height: 150px
     height: 270px
   
   .title 
@@ -83,7 +82,6 @@
 
   .description
     float: right
-    padding: 10px
     width: 250px
     font-family: 'Droid Sans', sans-serif
     font-style: normal
@@ -92,3 +90,6 @@
 
     p
       margin: 0px
+
+.b-show:hover .image-container .details-container .description
+  max-height: 200px !important

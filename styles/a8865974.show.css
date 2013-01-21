@@ -1,4 +1,4 @@
-/* line 4, ../../app/styles/show.sass */
+/* line 6, ../../app/styles/show.sass */
 .b-show {
   float: left;
   width: 270px;
@@ -13,33 +13,44 @@
   -webkit-box-shadow: 0 1px 3px rgba(35, 26, 26, 0.4);
   box-shadow: 0 1px 3px rgba(35, 26, 26, 0.4);
 }
-/* line 22, ../../app/styles/show.sass */
+/* line 24, ../../app/styles/show.sass */
 .b-show .image-container {
   position: relative;
 }
-/* line 25, ../../app/styles/show.sass */
+/* line 27, ../../app/styles/show.sass */
 .b-show .image-container .buttons-container {
   position: absolute;
   bottom: 0px;
 }
-/* line 29, ../../app/styles/show.sass */
+/* line 31, ../../app/styles/show.sass */
 .b-show .image-container .details-container {
-  padding: 8px 10px 6px;
+  padding: 8px 10px 0px;
+  max-height: 256px;
   position: absolute;
   bottom: 0px;
   background-color: rgba(40, 40, 40, 0.6);
   color: #eeeeee;
 }
-/* line 36, ../../app/styles/show.sass */
+/* line 39, ../../app/styles/show.sass */
 .b-show .image-container .details-container .details {
   font-size: 11px;
   font-family: "Droid Serif", serif;
+  padding-bottom: 1px;
 }
-/* line 40, ../../app/styles/show.sass */
+/* line 44, ../../app/styles/show.sass */
 .b-show .image-container .details-container .title {
   color: #eeeeee;
 }
-/* line 43, ../../app/styles/show.sass */
+/* line 47, ../../app/styles/show.sass */
+.b-show .image-container .details-container .description {
+  max-height: 0px;
+  -webkit-transition: max-height 0.6s ease-out;
+  -moz-transition: max-height 0.6s ease-out;
+  -o-transition: max-height 0.6s ease-out;
+  transition: max-height 0.6s ease-out;
+  padding-top: 6px;
+}
+/* line 52, ../../app/styles/show.sass */
 .b-show .buttons-container {
   display: none;
   width: 90%;
@@ -47,29 +58,17 @@
   background-color: rgba(40, 40, 40, 0.6);
   padding: 0px 5%;
 }
-/* line 50, ../../app/styles/show.sass */
+/* line 59, ../../app/styles/show.sass */
 .b-show .buttons-container i {
   cursor: pointer;
   color: white;
 }
-/* line 54, ../../app/styles/show.sass */
-.b-show .info-container {
-  overflow: hidden;
-}
-/* line 57, ../../app/styles/show.sass */
-.b-show .info-container .buttons-container {
-  float: left;
-}
-/* line 60, ../../app/styles/show.sass */
+/* line 63, ../../app/styles/show.sass */
 .b-show .image {
   width: 270px;
   height: 270px;
 }
-/* line 64, ../../app/styles/show.sass */
-.b-show .image.no-photo {
-  height: 270px;
-}
-/* line 68, ../../app/styles/show.sass */
+/* line 67, ../../app/styles/show.sass */
 .b-show .title {
   padding: 0px;
   margin: 0px;
@@ -80,24 +79,28 @@
   letter-spacing: -1px;
   font-family: "Droid Serif", serif;
 }
-/* line 78, ../../app/styles/show.sass */
+/* line 77, ../../app/styles/show.sass */
 .b-show .channel {
   float: left;
   width: 70px;
   height: 47px;
   margin: 10px 5px;
 }
-/* line 84, ../../app/styles/show.sass */
+/* line 83, ../../app/styles/show.sass */
 .b-show .description {
   float: right;
-  padding: 10px;
   width: 250px;
   font-family: "Droid Sans", sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 16px;
 }
-/* line 93, ../../app/styles/show.sass */
+/* line 91, ../../app/styles/show.sass */
 .b-show .description p {
   margin: 0px;
+}
+
+/* line 94, ../../app/styles/show.sass */
+.b-show:hover .image-container .details-container .description {
+  max-height: 200px !important;
 }
