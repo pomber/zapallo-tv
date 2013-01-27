@@ -10,6 +10,12 @@
       },
       "trunk8": {
         deps: ["jquery"]
+      },
+      "modal": {
+        deps: ["modalManager"]
+      },
+      "modalManager": {
+        deps: ["jquery"]
       }
     },
     paths: {
@@ -18,11 +24,13 @@
       knockout: 'vendor/knockout-2.2.0',
       domReady: 'vendor/dom-ready',
       typeahead: 'vendor/bootstrap-typeahead',
-      trunk8: 'vendor/trunk8'
+      trunk8: 'vendor/trunk8',
+      modalManager: 'vendor/bootstrap-modalmanager',
+      modal: 'vendor/bootstrap-modal'
     }
   });
 
-  require(['app', 'domReady!'], function(app) {
+  require(['app', 'domReady!', 'modal'], function(app) {
     return app.start();
   });
 

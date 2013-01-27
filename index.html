@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/54f28158.main.css">
+        <link rel="stylesheet" href="styles/81ad680a.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -69,81 +69,96 @@
          ref.parentNode.insertBefore(js, ref);
        }(document));
     </script>
-        
-    <nav class="navbar">
-        <div class="navbar-inner">
-            <a class="brand" href="/">Zapallo TV </i></a>            
-            <!-- <a class="brand d-refresh-shows"><i class="icon-refresh" title="actualizar"></i></a>      -->       
-            <ul class="nav pull-right">
-                <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Canales
-                    <b class="caret"></b>
-                    </a>
-                </li>
-                <li class="hide-small" style="display:none"><a href="javascript:login()">Entrar</a></li>
-            </ul>
+    
+    <div class="page-container">
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="/">Zapallo TV </i></a>            
+                <!-- <a class="brand d-refresh-shows"><i class="icon-refresh" title="actualizar"></i></a>      -->       
+                <ul class="nav pull-right">
+                    <li>
+                        <a href="#channels-settings" class="dropdown-toggle" data-toggle="modal" role="button">
+                        Canales
+                        <b class="caret"></b>
+                        </a>
+                    </li>
+                    <li class="hide-small" style="display:none"><a href="javascript:login()">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="channels-settings" class="modal hide fade" tabindex="-1" data-width="760">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3>Canales</h3>
+          </div>
+          <div class="modal-body">
+            Próximamente
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-primary">Guardar</button>
+          </div>
         </div>
-    </nav>
-    <section id="shows-section">
-        <div id="b-current-show-section">
-            <input type="text" placeholder="¿Qué estas viendo?" data-bind="hidden: currentShowIsSelected, value: currentShowTitle, typeahead: {source: shows, display: 'title', itemSelected: selectCurrentShow }"/>
-            <div data-bind="with: currentShow, visible: currentShowIsSelected" style="display:none" class="b-current-show-container">
-                <div class="image-container" data-bind="visible: hasImage">
-                    <img class="image" data-bind="attr: { src: imageUrl }">
-                </div>
-                <div class="buttons-container">
-                    <div class="top">
-                        <i class="icon-remove" data-bind="click: removeCurrentShow" title="No lo estoy viendo más"></i> 
+
+        <section id="shows-section">
+            <div id="b-current-show-section">
+                <input type="text" placeholder="¿Qué estas viendo?" data-bind="hidden: currentShowIsSelected, value: currentShowTitle, typeahead: {source: shows, display: 'title', itemSelected: selectCurrentShow }"/>
+                <div data-bind="with: currentShow, visible: currentShowIsSelected" style="display:none" class="b-current-show-container">
+                    <div class="image-container" data-bind="visible: hasImage">
+                        <img class="image" data-bind="attr: { src: imageUrl }">
                     </div>
-                    <div class="bottom">
-                        <i class="icon-google-plus" title="Compartir en Google+" data-bind="click: googleShare"></i>
-                        <i class="icon-twitter" title="Compartir en twitter" data-bind="click: twitterShare"></i>
-                        <i class="icon-facebook" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
+                    <div class="buttons-container">
+                        <div class="top">
+                            <i class="icon-remove" data-bind="click: removeCurrentShow" title="No lo estoy viendo más"></i> 
+                        </div>
+                        <div class="bottom">
+                            <i class="icon-google-plus" title="Compartir en Google+" data-bind="click: googleShare"></i>
+                            <i class="icon-twitter" title="Compartir en twitter" data-bind="click: twitterShare"></i>
+                            <i class="icon-facebook" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="info-container">
-                    <div class="top">
-                        <div class="watching-label">Estas viendo:</div>
-                        <div class="close-label"></div>
-                    </div>                    
-                    <div class="middle">
-                        <h1 class="title" data-bind="trunk8: {text: title, lines: 2}"></h1>
-                    </div>
-                    <div>
-                        <div class="channel">por <span data-bind="text: channelName"></span></div>
+                    <div class="info-container">
+                        <div class="top">
+                            <div class="watching-label">Estas viendo:</div>
+                            <div class="close-label"></div>
+                        </div>                    
+                        <div class="middle">
+                            <h1 class="title" data-bind="trunk8: {text: title, lines: 2}"></h1>
+                        </div>
+                        <div>
+                            <div class="channel">por <span data-bind="text: channelName"></span></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="shows-container" data-bind="visible: true, foreach: shows" style="display:none">
-            <article class="b-show">
-                <div class="image-container" data-bind="visible: true">
-                    <img class="image" data-bind="attr: { src: imageUrl }"/>
-                    <div class="details-container">
-                        <h1 class="title" data-bind="text: title"></h1>
-                        <div class="details">de <b data-bind="time: startTime"></b> a <b data-bind="time: endTime"></b> por <b data-bind="text: channelName"></b></div>
-                        <div class="description">
-                            <p data-bind='trunk8: { text: description, lines: 10 }'></p>
+            <div id="shows-container" data-bind="visible: true, foreach: shows" style="display:none">
+                <article class="b-show">
+                    <div class="image-container" data-bind="visible: true">
+                        <img class="image" data-bind="attr: { src: imageUrl }"/>
+                        <div class="details-container">
+                            <h1 class="title" data-bind="text: title"></h1>
+                            <div class="details">de <b data-bind="time: startTime"></b> a <b data-bind="time: endTime"></b> por <b data-bind="text: channelName"></b></div>
+                            <div class="description">
+                                <p data-bind='trunk8: { text: description, lines: 10 }'></p>
+                            </div>
+                        </div>                    
+                        <div class="buttons-container">
+                            <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
+                            <i class="icon-facebook icon-2x pull-left" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
+                            <i class="icon-twitter icon-2x pull-left" title="Compartir en twitter" data-bind="click: twitterShare"></i>
+                            <i class="icon-google-plus icon-2x pull-left" title="Compartir en Google+" data-bind="click: googleShare"></i>
                         </div>
-                    </div>                    
-                    <div class="buttons-container">
-                        <i class="icon-eye-open icon-2x pull-right" title="Lo estoy viendo" data-bind="click: setAsCurrent"></i>
-                        <i class="icon-facebook icon-2x pull-left" title="Compartir en Facebook" data-bind="click: facebookShare"></i>
-                        <i class="icon-twitter icon-2x pull-left" title="Compartir en twitter" data-bind="click: twitterShare"></i>
-                        <i class="icon-google-plus icon-2x pull-left" title="Compartir en Google+" data-bind="click: googleShare"></i>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </div>
-    </div>
 
         <!--[if lt IE 7]>
             <p class="chromeframe">Che, tu browser es muy viejo. <a href="http://browsehappy.com/">Bajate uno más nuevo</a> o <a href="http://www.google.com/chromeframe/?redirect=true">instalá Google Chrome Frame</a> para que te ande mejor este sitio.</p>
         <![endif]-->
         
-        
+    </div>
    
-    <script src="scripts/a29b5c69.amd-app.js"></script>
+    <script src="scripts/9c5196f9.amd-app.js"></script>
 </body>
 </html>

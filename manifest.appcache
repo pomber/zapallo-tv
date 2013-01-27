@@ -1,7 +1,7 @@
 # Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Sun Jan 20 2013 21:49:03 GMT-0300 (ART)
+# Time: Sat Jan 26 2013 23:17:51 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -38,37 +38,36 @@ http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif
 http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png
-http://zapallo-tv-cdn.appspot.com/images/shows/134971_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/158360_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/183877_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/192554_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/192733_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/207074_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/220905_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/229572_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/234131_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/237120_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/257125_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/287547_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/349789_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/366379_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/36753_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/385804_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/407052_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/44968_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/52064_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/104274_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/114209_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/118789_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/118840_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/191528_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/220706_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/225647_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/243257_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/249675_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/252447_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/266839_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/31627_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/320519_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/35493_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/377210_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/383412_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/39996_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/42184_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/426996_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/426999_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/432453_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/441719_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/448463_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/5288_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/5462_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/56875_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/56967_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/59158_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/6304_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/81365_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/87963_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/63728_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/96785_gr.jpg
 images/noise.jpg
-scripts/a29b5c69.amd-app.js
+scripts/9c5196f9.amd-app.js
 scripts/vendor/cf69c6f2.modernizr.min.js
-styles/54f28158.main.css
+styles/81ad680a.main.css
 
 NETWORK:
 *

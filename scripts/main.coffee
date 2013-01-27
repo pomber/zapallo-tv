@@ -6,6 +6,10 @@ require.config
 			deps: ["jquery"]
 		"trunk8":
 			deps: ["jquery"]
+		"modal":
+			deps: ["modalManager"]
+		"modalManager":
+			deps: ["jquery"]
 	paths: 
 		jquery: 'vendor/jquery.min'
 		masonry: 'vendor/jquery.masonry.min'
@@ -13,6 +17,8 @@ require.config
 		domReady: 'vendor/dom-ready'
 		typeahead: 'vendor/bootstrap-typeahead'
 		trunk8: 'vendor/trunk8'
+		modalManager: 'vendor/bootstrap-modalmanager'
+		modal: 'vendor/bootstrap-modal'
  
-require ['app', 'domReady!'], (app) ->
+require ['app', 'domReady!', 'modal'], (app) ->
 	app.start()
