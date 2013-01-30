@@ -18,11 +18,6 @@
   position: relative;
 }
 /* line 27, ../../app/styles/show.sass */
-.b-show .image-container .buttons-container {
-  position: absolute;
-  bottom: 0px;
-}
-/* line 31, ../../app/styles/show.sass */
 .b-show .image-container .details-container {
   padding: 8px 10px 0px;
   max-height: 256px;
@@ -31,17 +26,17 @@
   background-color: rgba(40, 40, 40, 0.6);
   color: #eeeeee;
 }
-/* line 39, ../../app/styles/show.sass */
+/* line 35, ../../app/styles/show.sass */
 .b-show .image-container .details-container .details {
   font-size: 11px;
   font-family: "Droid Serif", serif;
   padding-bottom: 1px;
 }
-/* line 44, ../../app/styles/show.sass */
+/* line 40, ../../app/styles/show.sass */
 .b-show .image-container .details-container .title {
   color: #eeeeee;
 }
-/* line 47, ../../app/styles/show.sass */
+/* line 43, ../../app/styles/show.sass */
 .b-show .image-container .details-container .description {
   max-height: 0px;
   -webkit-transition: max-height 0.6s ease-out;
@@ -50,25 +45,22 @@
   transition: max-height 0.6s ease-out;
   padding-top: 6px;
 }
-/* line 52, ../../app/styles/show.sass */
+/* line 48, ../../app/styles/show.sass */
 .b-show .buttons-container {
-  display: none;
-  width: 90%;
-  height: 32px;
-  background-color: rgba(40, 40, 40, 0.6);
-  padding: 0px 5%;
-}
-/* line 59, ../../app/styles/show.sass */
-.b-show .buttons-container i {
-  cursor: pointer;
+  overflow: hidden;
+  padding-bottom: 5px;
   color: white;
 }
-/* line 63, ../../app/styles/show.sass */
+/* line 53, ../../app/styles/show.sass */
+.b-show .buttons-container i {
+  cursor: pointer;
+}
+/* line 56, ../../app/styles/show.sass */
 .b-show .image {
   width: 270px;
   height: 270px;
 }
-/* line 67, ../../app/styles/show.sass */
+/* line 60, ../../app/styles/show.sass */
 .b-show .title {
   padding: 0px;
   margin: 0px;
@@ -79,14 +71,14 @@
   letter-spacing: -1px;
   font-family: "Droid Serif", serif;
 }
-/* line 77, ../../app/styles/show.sass */
+/* line 70, ../../app/styles/show.sass */
 .b-show .channel {
   float: left;
   width: 70px;
   height: 47px;
   margin: 10px 5px;
 }
-/* line 83, ../../app/styles/show.sass */
+/* line 76, ../../app/styles/show.sass */
 .b-show .description {
   float: right;
   width: 250px;
@@ -95,12 +87,12 @@
   font-size: 12px;
   line-height: 16px;
 }
-/* line 91, ../../app/styles/show.sass */
+/* line 84, ../../app/styles/show.sass */
 .b-show .description p {
   margin: 0px;
 }
 
-/* line 94, ../../app/styles/show.sass */
+/* line 87, ../../app/styles/show.sass */
 .b-show:hover .image-container .details-container .description {
   max-height: 200px !important;
 }

@@ -12,10 +12,9 @@ define ['jquery', 'knockout', 'data-service', 'show-list-vm', 'masonry', 'ko.ext
 		start: =>
 			dataService.getShows (shows) =>
 				@showListViewModel = new ShowListViewModel(shows)
-				ko.applyBindings @showListViewModel, document.getElementById('shows-section')
+				ko.applyBindings @showListViewModel, document.getElementById('page-container')
 				$('#shows-container').masonry
 					itemSelector : '.b-show'
-				$('.d-refresh-shows').click(@refresh)
 	
 	return new App()
 

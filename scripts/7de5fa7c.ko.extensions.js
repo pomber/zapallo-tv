@@ -1,6 +1,6 @@
 (function() {
 
-  define(['jquery', 'knockout', 'typeahead', 'trunk8'], function($, ko) {
+  define(['jquery', 'knockout', 'typeahead', 'trunk8', 'waypointsSticky'], function($, ko) {
     ko.bindingHandlers.hidden = {
       update: function(element, valueAccessor) {
         var value;
@@ -44,7 +44,7 @@
         return $(element).typeahead(params);
       }
     };
-    return ko.bindingHandlers.trunk8 = {
+    ko.bindingHandlers.trunk8 = {
       init: function(element, valueAccessor) {
         var params, text;
         params = ko.utils.unwrapObservable(valueAccessor());
@@ -58,6 +58,27 @@
         text = ko.utils.unwrapObservable(params.text);
         $(element).text(text);
         return $(element).trunk8('update', text);
+      }
+    };
+    return ko.bindingHandlers.stickyVisible = {
+      update: function(element, valueAccessor) {
+        var $sticky, $wrapper, value;
+        value = ko.utils.unwrapObservable(valueAccessor());
+        ko.bindingHandlers.visible.update(element, function() {
+          return value;
+        });
+        if ($(element).children().hasClass('sticky-wrapper') && value) {
+          return;
+        }
+        if (value) {
+          return $(element).children().waypoint('sticky');
+        } else if ($(element).children().hasClass('sticky-wrapper')) {
+          $wrapper = $(element).children();
+          $wrapper.waypoint('destroy');
+          $sticky = $wrapper.contents();
+          $wrapper.replaceWith($sticky);
+          return $sticky.removeClass("stuck");
+        }
       }
     };
   });

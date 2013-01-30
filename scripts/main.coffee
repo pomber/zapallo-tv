@@ -6,10 +6,15 @@ require.config
 			deps: ["jquery"]
 		"trunk8":
 			deps: ["jquery"]
-		"modal":
-			deps: ["modalManager"]
 		"modalManager":
 			deps: ["jquery"]
+		"modal":
+			deps: ["modalManager"]
+		"waypoints":
+			deps: ["jquery"]
+		"waypointsSticky":
+			deps: ["waypoints"]
+
 	paths: 
 		jquery: 'vendor/jquery.min'
 		masonry: 'vendor/jquery.masonry.min'
@@ -19,6 +24,8 @@ require.config
 		trunk8: 'vendor/trunk8'
 		modalManager: 'vendor/bootstrap-modalmanager'
 		modal: 'vendor/bootstrap-modal'
+		waypoints: 'vendor/waypoints.min'
+		waypointsSticky: 'vendor/waypoints-sticky.min'
  
 require ['app', 'domReady!', 'modal'], (app) ->
 	app.start()

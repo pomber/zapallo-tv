@@ -1,4 +1,4 @@
-define ['jquery', 'knockout', 'typeahead', 'trunk8'], ($, ko) ->
+define ['jquery', 'knockout', 'typeahead', 'trunk8', 'waypointsSticky'], ($, ko) ->
 	
 	ko.bindingHandlers.hidden =
 		update: (element, valueAccessor) ->
@@ -39,3 +39,22 @@ define ['jquery', 'knockout', 'typeahead', 'trunk8'], ($, ko) ->
 			text = ko.utils.unwrapObservable params.text
 			$(element).text(text)
 			$(element).trunk8('update', text)
+	
+	# makes the childs of the element sticky
+	ko.bindingHandlers.stickyVisible =
+
+		update: (element, valueAccessor) ->
+			value = ko.utils.unwrapObservable valueAccessor()
+			ko.bindingHandlers.visible.update(element, -> return value)
+
+			if $(element).children().hasClass('sticky-wrapper') and value
+				return
+
+			if value
+				$(element).children().waypoint 'sticky'
+			else if $(element).children().hasClass 'sticky-wrapper'
+				$wrapper = $(element).children()
+				$wrapper.waypoint 'destroy'
+				$sticky = $wrapper.contents()
+				$wrapper.replaceWith($sticky)
+				$sticky.removeClass("stuck")

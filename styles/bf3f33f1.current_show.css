@@ -1,0 +1,105 @@
+/* line 6, ../../app/styles/current_show.sass */
+#b-current-show-section {
+  margin: 0px;
+}
+
+/* line 10, ../../app/styles/current_show.sass */
+#b-current-show-section input {
+  width: 60%;
+  color: #080808;
+  display: block;
+  margin: 20px auto 20px;
+}
+
+/* line 17, ../../app/styles/current_show.sass */
+.current-show-band {
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(250, 250, 250, 0.78);
+}
+
+/* line 22, ../../app/styles/current_show.sass */
+.current-show-band.stuck {
+  position: fixed;
+  top: 0;
+}
+
+/* line 26, ../../app/styles/current_show.sass */
+.b-current-show {
+  overflow: hidden;
+  width: 50%;
+  height: 110px;
+  margin: 0 auto;
+}
+/* line 33, ../../app/styles/current_show.sass */
+.b-current-show .image-container {
+  float: left;
+  margin: 5px;
+}
+/* line 36, ../../app/styles/current_show.sass */
+.b-current-show .image-container .image {
+  width: 100px;
+  height: 100px;
+}
+/* line 40, ../../app/styles/current_show.sass */
+.b-current-show .info-container {
+  overflow: hidden;
+  margin: 5px;
+}
+/* line 44, ../../app/styles/current_show.sass */
+.b-current-show .info-container .top, .b-current-show .info-container .bottom {
+  overflow: hidden;
+  height: 20px;
+}
+/* line 47, ../../app/styles/current_show.sass */
+.b-current-show .info-container .middle {
+  height: 60px;
+  margin: 0px 5px;
+}
+/* line 51, ../../app/styles/current_show.sass */
+.b-current-show .info-container .title {
+  margin: 0px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+/* line 56, ../../app/styles/current_show.sass */
+.b-current-show .info-container .watching-label, .b-current-show .info-container .channel {
+  float: left;
+  margin: 0px 5px;
+}
+/* line 60, ../../app/styles/current_show.sass */
+.b-current-show .buttons-container {
+  float: right;
+  margin: 5px;
+  font-size: 20px;
+  width: 20px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+/* line 69, ../../app/styles/current_show.sass */
+.b-current-show .buttons-container i {
+  cursor: pointer;
+}
+/* line 72, ../../app/styles/current_show.sass */
+.b-current-show .buttons-container .top {
+  position: absolute;
+  top: 0;
+}
+/* line 75, ../../app/styles/current_show.sass */
+.b-current-show .buttons-container .bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 582px) {
+  /* line 81, ../../app/styles/current_show.sass */
+  .b-current-show {
+    width: 95% !important;
+  }
+  /* line 83, ../../app/styles/current_show.sass */
+  .b-current-show .image-container {
+    display: none;
+  }
+}

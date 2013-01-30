@@ -11,11 +11,17 @@
       "trunk8": {
         deps: ["jquery"]
       },
+      "modalManager": {
+        deps: ["jquery"]
+      },
       "modal": {
         deps: ["modalManager"]
       },
-      "modalManager": {
+      "waypoints": {
         deps: ["jquery"]
+      },
+      "waypointsSticky": {
+        deps: ["waypoints"]
       }
     },
     paths: {
@@ -26,7 +32,9 @@
       typeahead: 'vendor/bootstrap-typeahead',
       trunk8: 'vendor/trunk8',
       modalManager: 'vendor/bootstrap-modalmanager',
-      modal: 'vendor/bootstrap-modal'
+      modal: 'vendor/bootstrap-modal',
+      waypoints: 'vendor/waypoints.min',
+      waypointsSticky: 'vendor/waypoints-sticky.min'
     }
   });
 

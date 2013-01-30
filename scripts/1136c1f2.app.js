@@ -26,11 +26,10 @@
         var _this = this;
         return dataService.getShows(function(shows) {
           _this.showListViewModel = new ShowListViewModel(shows);
-          ko.applyBindings(_this.showListViewModel, document.getElementById('shows-section'));
-          $('#shows-container').masonry({
+          ko.applyBindings(_this.showListViewModel, document.getElementById('page-container'));
+          return $('#shows-container').masonry({
             itemSelector: '.b-show'
           });
-          return $('.d-refresh-shows').click(_this.refresh);
         });
       };
 
