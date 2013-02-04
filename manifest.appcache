@@ -1,7 +1,7 @@
 # Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Tue Jan 29 2013 22:45:32 GMT-0300 (ART)
+# Time: Sun Feb 03 2013 22:30:23 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -22,7 +22,6 @@ CACHE MANIFEST
 #  configFile: /usr/lib/node_modules/yeoman/lib/support/confess.json
 
 CACHE:
-http:///zapallo-tv-cdn.appspot.com/images/shows/312560_gr.jpg
 http://connect.facebook.net/en_US/all.js
 http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700
 http://localhost:3501/images/bg.png
@@ -39,37 +38,33 @@ http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif
 http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png
-http://zapallo-tv-cdn.appspot.com/images/shows/122409_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/145968_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/154293_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/157090_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/159838_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/198618_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/217093_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/218684_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/221206_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/225099_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/233683_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/235990_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/293834_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/308066_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/34732_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/350592_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/353566_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/388868_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/426996_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/426999_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/433399_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/445095_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/445814_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/466536_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/87795_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/91834_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/96785_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/133483_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/134916_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/164228_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/167434_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/169085_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/18891_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/214583_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/222196_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/231464_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/238126_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/242533_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/249664_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/256507_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/260016_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/274910_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/306713_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/309341_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/32188_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/366377_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/383410_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/420386_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/469421_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/472730_gr.jpg
 images/noise.jpg
-scripts/caf2164d.amd-app.js
+scripts/298dc7b4.amd-app.js
 scripts/vendor/cf69c6f2.modernizr.min.js
-styles/c436c699.main.css
+styles/77e5ba6b.main.css
 
 NETWORK:
 *

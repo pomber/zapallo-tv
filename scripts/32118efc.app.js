@@ -1,7 +1,7 @@
 (function() {
   var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  define(['jquery', 'knockout', 'data-service', 'show-list-vm', 'masonry', 'ko.extensions'], function($, ko, dataService, ShowListViewModel) {
+  define(['jquery', 'knockout', 'data-service', 'app-vm', 'masonry', 'ko.extensions'], function($, ko, dataService, AppViewModel) {
     var App;
     App = (function() {
 
@@ -24,12 +24,10 @@
 
       App.prototype.start = function() {
         var _this = this;
+        this.appViewModel = new AppViewModel();
+        ko.applyBindings(this.appViewModel, document.getElementById('page-container'));
         return dataService.getShows(function(shows) {
-          _this.showListViewModel = new ShowListViewModel(shows);
-          ko.applyBindings(_this.showListViewModel, document.getElementById('page-container'));
-          return $('#shows-container').masonry({
-            itemSelector: '.b-show'
-          });
+          return _this.appViewModel.setShows(shows);
         });
       };
 

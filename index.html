@@ -13,7 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         
-        <link rel="stylesheet" href="styles/c436c699.main.css">
+        <link rel="stylesheet" href="styles/77e5ba6b.main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700" rel="stylesheet" type="text/css">
         <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
     </head>
@@ -100,7 +100,7 @@
           </div>
         </div>
 
-        <div id="b-current-show-section">
+        <div id="b-current-show-section" data-bind="with: showsViewModel, visible: areShowsLoaded" style="display: none">
             <input type="text" placeholder="¿Qué estas viendo?" data-bind="hidden: currentShowIsSelected, value: currentShowTitle, typeahead: {source: shows, display: 'title', itemSelected: selectCurrentShow }"/>
             <div data-bind="stickyVisible: currentShowIsSelected" style="display:none" >
                 <div class="current-show-band">
@@ -135,7 +135,12 @@
             </div>
         </div>
 
-        <section id="shows-section">            
+        <div class="shows-loading-container" data-bind="hidden: areShowsLoaded">
+            <i class="icon-spinner icon-spin icon-3x pull-left"></i>
+            Aguantá un toque, está cargando...
+        </div>       
+
+        <section id="shows-section" data-bind="with: showsViewModel">     
             <div id="shows-container" data-bind="visible: true, foreach: shows" style="display:none">
                 <article class="b-show">
                     <div class="image-container" data-bind="visible: true">
@@ -164,6 +169,6 @@
         
     </div>
    
-    <script src="scripts/caf2164d.amd-app.js"></script>
+    <script src="scripts/298dc7b4.amd-app.js"></script>
 </body>
 </html>

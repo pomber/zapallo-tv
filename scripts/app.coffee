@@ -1,4 +1,4 @@
-define ['jquery', 'knockout', 'data-service', 'show-list-vm', 'masonry', 'ko.extensions'], ($, ko, dataService, ShowListViewModel) ->
+define ['jquery', 'knockout', 'data-service', 'app-vm', 'masonry', 'ko.extensions'], ($, ko, dataService, AppViewModel) ->
 
 	class App
 
@@ -10,11 +10,12 @@ define ['jquery', 'knockout', 'data-service', 'show-list-vm', 'masonry', 'ko.ext
 				$('.d-refresh-shows').removeClass('icon-spin')
 
 		start: =>
+			@appViewModel = new AppViewModel()
+			ko.applyBindings @appViewModel, document.getElementById('page-container')
 			dataService.getShows (shows) =>
-				@showListViewModel = new ShowListViewModel(shows)
-				ko.applyBindings @showListViewModel, document.getElementById('page-container')
-				$('#shows-container').masonry
-					itemSelector : '.b-show'
+				@appViewModel.setShows shows
+				# $('#shows-container').masonry
+				# 	itemSelector : '.b-show'
 	
 	return new App()
 
