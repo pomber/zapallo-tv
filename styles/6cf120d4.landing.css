@@ -1,0 +1,6 @@
+/* line 6, ../../app/styles/landing.sass */
+.landing-container {
+  height: 300px;
+  background-image: url("../images/landing_bg.png");
+  background-repeat: repeat;
+}
