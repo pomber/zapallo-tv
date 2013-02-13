@@ -1,7 +1,7 @@
 # Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Sat Feb 09 2013 13:04:33 GMT-0300 (ART)
+# Time: Wed Feb 13 2013 00:00:41 GMT-0300 (ART)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -23,13 +23,13 @@ CACHE MANIFEST
 
 CACHE:
 http://connect.facebook.net/en_US/all.js
+http://fonts.googleapis.com/css?family=Droid+Serif
+http://fonts.googleapis.com/css?family=Open+Sans
 http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Merriweather:400,300,700
 http://localhost:3501/images/bg.png
 http://localhost:3501/images/glyphicons-halflings-white.png
 http://localhost:3501/images/glyphicons-halflings.png
 http://localhost:3501/images/landing_bg.png
-http://localhost:3501/images/select2.png
-http://localhost:3501/images/spinner.gif
 http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yD/x/Cou7n-nqK52.gif
 http://static.ak.fbcdn.net/rsrc.php/v2/yH/x/eIpbnVKI9lR.png
@@ -39,31 +39,34 @@ http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png
 http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif
 http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png
+http://zapallo-tv-cdn.appspot.com/images/shows/112281_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/141087_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/152548_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/156531_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/157968_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/169066_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/18920_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/208444_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/224149_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/253622_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/295764_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/30213_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/31195_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/329325_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/415379_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/42166_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/439008_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/169601_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/173175_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/180785_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/181169_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/196325_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/214575_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/233087_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/257053_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/274910_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/292408_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/32188_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/384135_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/388069_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/432453_gr.jpg
 http://zapallo-tv-cdn.appspot.com/images/shows/44968_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/475343_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/52071_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/5524_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/874_gr.jpg
-http://zapallo-tv-cdn.appspot.com/images/shows/92196_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/451923_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/464157_gr.jpg
+http://zapallo-tv-cdn.appspot.com/images/shows/58704_gr.jpg
+images/landing0.jpg
+images/landing1.jpg
+images/landing2.jpg
 images/noise.jpg
-scripts/298dc7b4.amd-app.js
+scripts/e58821c9.amd-app.js
 scripts/vendor/cf69c6f2.modernizr.min.js
-styles/2620e230.main.css
+styles/5b4aa850.main.css
 
 NETWORK:
 *

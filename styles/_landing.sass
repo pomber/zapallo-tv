@@ -1,0 +1,76 @@
+@import variables
+@import app_variables
+@import compass/css3/transition
+@import compass/css3/opacity
+@import vendor/cycler
+
+.landing-container
+	background:
+		image: url("../images/landing_bg.png") 
+		repeat: repeat
+	border-bottom: 6px solid $grayDarker
+
+	.center
+		width: 866px
+		margin: 0 auto
+		position: relative
+		overflow: hidden
+
+	.left
+		width: 270px
+		margin: 20px 7px
+
+	.right
+		width: 570px
+		margin: 0 6px
+
+	h2
+		color: white
+		line-height: 1.05
+		font-size: 4em
+		font-family: 'Open Sans' sans-serif
+
+	.features 
+		position: relative
+		overflow: hidden
+
+	.feature
+		width: 184px
+		height: 130px
+		color: white
+		float: left
+		margin: 2px 3px
+		//background-color: rgba(40, 40, 40, 0.6)
+
+		h3
+			color: white
+			font-weight: bold
+			font-family: 'Open Sans' sans-serif
+			margin: 0
+
+		i
+			padding: 0 5px
+
+		p
+			padding: 0 10px
+
+	a 
+		text-shadow: none
+
+	.action
+		padding-bottom: 10px
+		padding-left: 10px
+
+	@media (max-width: 866px)
+		.center
+			width: 582px
+		.left
+			display: none
+
+	@media (max-width: 582px)
+		.center
+			width: auto
+		.right
+			width: auto
+		h2
+			font-size: 2em

@@ -60,6 +60,26 @@
         return $(element).trunk8('update', text);
       }
     };
+    ko.bindingHandlers.cycler = {
+      init: function(element, valueAccessor) {
+        var cycle, delay,
+          _this = this;
+        delay = ko.utils.unwrapObservable(valueAccessor());
+        cycle = function() {
+          var $active, $cycler, $first, $next;
+          $cycler = $(element);
+          $active = $cycler.children(".active");
+          $first = $cycler.children("img:first");
+          $next = $active.next().length !== 0 ? $active.next() : $first;
+          $next.css('z-index', 2);
+          return $active.fadeOut(1500, function() {
+            $active.css('z-index', 1).show().removeClass('active');
+            return $next.css('z-index', 3).addClass('active');
+          });
+        };
+        return setInterval(cycle, delay);
+      }
+    };
     return ko.bindingHandlers.stickyVisible = {
       update: function(element, valueAccessor) {
         var $sticky, $wrapper, value;

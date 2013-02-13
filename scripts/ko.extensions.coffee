@@ -39,6 +39,22 @@ define ['jquery', 'knockout', 'typeahead', 'trunk8', 'waypointsSticky'], ($, ko)
 			text = ko.utils.unwrapObservable params.text
 			$(element).text(text)
 			$(element).trunk8('update', text)
+
+	ko.bindingHandlers.cycler =
+		init: (element, valueAccessor) ->
+			delay = ko.utils.unwrapObservable valueAccessor()
+			cycle = () =>
+				$cycler = $(element)
+				$active = $cycler.children(".active")
+				$first = $cycler.children("img:first")
+				$next = if $active.next().length isnt 0 then $active.next() else $first
+				$next.css('z-index', 2)
+				$active.fadeOut(1500, () =>
+					$active.css('z-index', 1).show().removeClass('active')
+					$next.css('z-index', 3).addClass('active')
+				)
+			setInterval(cycle, delay)
+
 	
 	# makes the childs of the element sticky
 	ko.bindingHandlers.stickyVisible =
